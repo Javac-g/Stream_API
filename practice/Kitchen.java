@@ -36,7 +36,7 @@ public class Kitchen{
 		}
 		System.out.println(dishesNames);
 
-		List<String> anotherDishesNames = dishes.stream()
+		List<String> anotherDishesNames = dishes.parallelStream()
 			.filter(d -> d.getCalories() < 200)
 			.sorted(Comparator.comparing(Dish::getCalories))
 			.map(Dish::getName)
