@@ -17,9 +17,9 @@ public class First{
 		// 	public int compare(Apple a1,Apple a2){
 		// 		return a1.getWeight().compareTo(a2.getWeight());
 		// 	}
-		// });
-		list.sort(comparing(Apple::getWeight));
+		// }); 
+		list.sort(Comparator.comparing(Apple::getWeight));
 		System.out.println(list);
-
+    
 	}
 }
